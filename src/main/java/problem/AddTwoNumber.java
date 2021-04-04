@@ -2,7 +2,7 @@ package problem;
 
 public class AddTwoNumber {
 
-    public AddTwoNumber() {
+    public AddTwoNumber(ListNode l1, ListNode l2) {
 
     }
 
