@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import problem.addtwonumber.AddTwoNumber;
 import problem.addtwonumber.ListNode;
@@ -34,5 +35,33 @@ public class AddTwoNumberTest {
         list2.add(3);
 
         List<Integer> result = addTwoNumber.addTwoNumbers(list1, list2);
+        List<Integer> expected = new ArrayList<>();
+        expected.add(1);
+        expected.add(3);
+        expected.add(5);
+        expected.add(7);
+
+        Assertions.assertIterableEquals(expected, result);
+
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(9);
+        list3.add(9);
+        list3.add(9);
+        list3.add(9);
+        List<Integer> list4 = new ArrayList<>();
+        list4.add(9);
+        list4.add(9);
+        list4.add(9);
+
+        List<Integer> result2 = addTwoNumber.addTwoNumbers(list3, list4);
+        List<Integer> expected2 = new ArrayList<>();
+        expected2.add(1);
+        expected2.add(0);
+        expected2.add(9);
+        expected2.add(9);
+        expected2.add(8);
+
+        Assertions.assertIterableEquals(expected2, result2);
     }
 }
+

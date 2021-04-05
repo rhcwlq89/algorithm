@@ -2,7 +2,6 @@ package problem.addtwonumber;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ListIterator;
 
 public class AddTwoNumber {
 
@@ -10,6 +9,17 @@ public class AddTwoNumber {
         List<Integer> result = new ArrayList<>();
         int carry = 0;
 
+        for(int i = 1; i <= list1.size() || i <= list2.size(); i++) {
+            int x = list1.size() - i >= 0 ? list1.get(list1.size() - i) : 0;
+            int y = list2.size() - i >= 0 ? list2.get(list2.size() - i) : 0;
+            int sum = carry + x + y;
+            carry = sum / 10;
+            result.add(0, sum % 10);
+        }
+
+        if(carry > 0) {
+            result.add(0, carry);
+        }
 
         return result;
     }
