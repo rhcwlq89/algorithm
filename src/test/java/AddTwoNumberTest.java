@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import problem.addtwonumber.AddTwoNumber;
-import problem.addtwonumber.ListNode;
+import problem.add.two.number.AddTwoNumber;
+import problem.add.two.number.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;
