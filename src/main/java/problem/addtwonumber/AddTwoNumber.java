@@ -8,17 +8,9 @@ public class AddTwoNumber {
 
     public List<Integer> addTwoNumbers(List<Integer> list1, List<Integer> list2) {
         List<Integer> result = new ArrayList<>();
-        ListIterator<Integer> integerListIterator1 = list1.listIterator();
-        ListIterator<Integer> integerListIterator2 = list2.listIterator();
         int carry = 0;
 
-        while(integerListIterator1.hasNext() || integerListIterator2.hasNext()) {
-            int x = (integerListIterator1.next() != null) ? integerListIterator1.next():0;
-            int y = (integerListIterator2.next() != null) ? integerListIterator2.next():0;
-            int sum = carry + x + y;
-            carry = sum / 10;
 
-        }
         return result;
     }
 
