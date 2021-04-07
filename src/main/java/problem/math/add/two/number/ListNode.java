@@ -1,4 +1,4 @@
-package problem.add.two.number;
+package problem.math.add.two.number;
 
 public class ListNode {
     public int val;

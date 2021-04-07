@@ -1,9 +1,9 @@
-package add.two.number;
+package math.add.two.number;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import problem.add.two.number.AddTwoNumber;
-import problem.add.two.number.ListNode;
+import problem.math.add.two.number.AddTwoNumber;
+import problem.math.add.two.number.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package problem.add.two.number;
+package problem.math.add.two.number;
 
 import java.util.ArrayList;
 import java.util.List;
