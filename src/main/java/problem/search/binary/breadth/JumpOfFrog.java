@@ -27,31 +27,37 @@ public class JumpOfFrog {
      */
 
     public int jumpOfFrog(int[] nums) {
-        int count = 0;
-        int a = nums[0];
-        int start = nums[a];
         boolean[] visited = new boolean[nums.length];
+        int count = 1;
 
         Queue<Integer> queue = new LinkedList<>();
-        queue.offer(start);
+        queue.offer(0);
+        visited[0] = true;
 
         while(!queue.isEmpty()) {
-            int x = queue.poll();
-            for(int i = 0; i<size; i++) {
-                if ( != null) {
-                    queue.offer();
+            int size = queue.size();
+            for(int i =0; i < size; i++) {
+                int currentPosition = queue.poll();
+                int jump = nums[currentPosition];
+                int leftPosition = currentPosition - jump;
+                int rightPosition = currentPosition + jump;
+                if(rightPosition == nums.length - 1) {
+                    return count;
                 }
-                if ( != null) {
-                    queue.offer();
+                if(leftPosition != rightPosition) {
+                    if ((leftPosition > 0) && (visited[leftPosition] == false)) {
+                        queue.offer(leftPosition);
+                        visited[leftPosition] = true;
+                    }
+                    if ((rightPosition < nums.length - 1) && (visited[rightPosition] == false)) {
+                        queue.offer(rightPosition);
+                        visited[rightPosition] = true;
+                    }
                 }
             }
-            count++;
+            count ++;
         }
 
-
-        return count;
+        return -1;
     }
-
-
-
 }
