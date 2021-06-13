@@ -28,15 +28,15 @@ public class DepthFirstSearch {
         stack.push(root);
 
         while(!stack.isEmpty()) {
-            TreeNode pop = stack.peek();
+            TreeNode pop = stack.pop();
             System.out.println(pop.getVal());
+            if(pop.getRight() != null) {
+                stack.push(pop.getRight());
+            }
             if(pop.getLeft() != null) {
                 stack.push(pop.getLeft());
-            } else {
-                if(pop.getRight() != null) {
-                    stack.push(pop.getRight());
-                }
             }
+
         }
 
         return 0;

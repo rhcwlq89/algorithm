@@ -1,4 +1,4 @@
-package search.binary.breadth;
+package search.binary;
 
 import org.junit.jupiter.api.Test;
 import problem.search.binary.BinarySearch;

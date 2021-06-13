@@ -1,4 +1,4 @@
-package bfs;
+package search.binary.breadth;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

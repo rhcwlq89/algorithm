@@ -1,4 +1,4 @@
-package bfs;
+package search.binary.breadth;
 
 import org.junit.jupiter.api.Test;
 import problem.search.binary.breadth.BreadthFirstSearch;

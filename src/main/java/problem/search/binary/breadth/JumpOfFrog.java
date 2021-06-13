@@ -1,7 +1,5 @@
 package problem.search.binary.breadth;
 
-import problem.search.binary.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -41,9 +39,11 @@ public class JumpOfFrog {
                 int jump = nums[currentPosition];
                 int leftPosition = currentPosition - jump;
                 int rightPosition = currentPosition + jump;
+
                 if(rightPosition == nums.length - 1) {
                     return count;
                 }
+
                 if(leftPosition != rightPosition) {
                     if ((leftPosition > 0) && (visited[leftPosition] == false)) {
                         queue.offer(leftPosition);
