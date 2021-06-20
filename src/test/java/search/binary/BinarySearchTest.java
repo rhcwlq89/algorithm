@@ -10,6 +10,6 @@ public class BinarySearchTest {
         int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
         BinarySearch binarySearch = new BinarySearch();
-        binarySearch.binarySearch(2, arr);
+        binarySearch.binarySearch(8, arr);
     }
 }

@@ -4,6 +4,12 @@ public class QuickSort {
 
     public void quickSort(int[] array, int left, int right) {
         if(left >= right) return;
+        for (int i : array) {
+            System.out.print(i + ",");
+        }
+        System.out.println("");
+
+
 
         // 분할
         int pivot = partition(array, left, right);

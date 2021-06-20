@@ -7,9 +7,9 @@ public class QuickSortTest {
 
     @Test
     public void quickSortTest() {
-        int[] array = {1, 3, 2, 4, 5};
+        int[] array = {3, 44, 38, 5, 47, 15, 36, 26, 27};
         QuickSort quickSort = new QuickSort();
-        quickSort.quickSort(array, 0, 4);
+        quickSort.quickSort(array, 0, 8);
 
         for (int i : array) {
             System.out.println(i);
