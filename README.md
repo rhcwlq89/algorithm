@@ -2,14 +2,14 @@
 
 ## 자료구조
 
-Map
-ㄴHashMap
-ㄴLinkedListHashMap
-ㄴTreeMap
+1. Map
+HashMap
+LinkedListHashMap
+TreeMap
 
-Queue
-ㄴLinkedList
-ㄴPriorityQueue
+2. Queue
+LinkedList
+PriorityQueue
 
 ## 알고리즘
 1. 이진검색
