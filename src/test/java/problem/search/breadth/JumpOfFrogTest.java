@@ -1,4 +1,4 @@
-package search.binary.breadth;
+package problem.search.breadth;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

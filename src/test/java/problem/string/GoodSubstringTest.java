@@ -1,8 +1,7 @@
-package string;
+package problem.string;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import problem.string.GoodSubstring;
 
 public class GoodSubstringTest {
 

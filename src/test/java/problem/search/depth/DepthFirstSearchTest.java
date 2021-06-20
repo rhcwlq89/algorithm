@@ -1,4 +1,4 @@
-package search.binary.depth;
+package problem.search.depth;
 
 import org.junit.jupiter.api.Test;
 import problem.search.binary.depth.DepthFirstSearch;

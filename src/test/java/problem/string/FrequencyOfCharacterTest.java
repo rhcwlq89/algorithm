@@ -1,4 +1,4 @@
-package string;
+package problem.string;
 
 
 import org.junit.jupiter.api.Assertions;

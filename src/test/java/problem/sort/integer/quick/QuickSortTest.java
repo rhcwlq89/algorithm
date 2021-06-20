@@ -1,4 +1,4 @@
-package sort.integer.quick;
+package problem.sort.integer.quick;
 
 import org.junit.jupiter.api.Test;
 import problem.sort.integer.quick.QuickSort;

@@ -1,4 +1,4 @@
-package math.add.two.number;
+package problem.math;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
