@@ -1,14 +1,13 @@
 package datastructure.map;
 
-
-import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
-
-public class LinkedHashMapApp {
+public class TreeMapApp {
 
     public void testInputOutput() {
-        Map<String, String> map = new LinkedHashMap<>();
+        Map<String, String> map = new TreeMap<>();
+
         map.put("e", "e");
         map.put("d", "d");
         map.put("a", "a");
