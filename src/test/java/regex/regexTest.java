@@ -72,12 +72,48 @@ public class regexTest {
     }
 
     @Test
+    public void testRegexxx() {
+        String regex = "(.)(.)(.)";
+        Pattern pattern = compile(regex);
+        Matcher matcher = pattern.matcher("abc");
+
+        while(matcher.find()) {
+            System.out.println("matcher.group(0) = " + matcher.group(0));
+            System.out.println("matcher.group(0) = " + matcher.group(1));
+            System.out.println("matcher.group(0) = " + matcher.group(2));
+            System.out.println("matcher.group(0) = " + matcher.group(3));
+        }
+    }
+
+    @Test
     public void testRegex() {
         String s = "(.)\\1*";
         Pattern pattern = compile(s);
         Matcher matcher = pattern.matcher("aaabced");
+
         while(matcher.find()) {
-            System.out.println(matcher.group());
+            System.out.println(matcher.group(0));
+        }
+    }
+
+    @Test
+    public void testRegex2() {
+        String line = "This order was placed for QT3000! OK?";
+        String pattern = "(.*)(\\d+)(.*)";
+
+        // Create a Pattern object
+        Pattern r = Pattern.compile(pattern);
+
+        // Now create matcher object.
+        Matcher m = r.matcher(line);
+
+        if (m.find( )) {
+            System.out.println("Found value: " + m.group(0) );
+            System.out.println("Found value: " + m.group(1) );
+            System.out.println("Found value: " + m.group(2) );
+            System.out.println("Found value: " + m.group(3) );
+        } else {
+            System.out.println("NO MATCH");
         }
     }
 
