@@ -73,15 +73,25 @@ public class regexTest {
 
     @Test
     public void testRegexxx() {
-        String regex = "(.)(.)(.)";
+        String regex = "(.)\\1?";
         Pattern pattern = compile(regex);
-        Matcher matcher = pattern.matcher("abc");
+        Matcher matcher = pattern.matcher("aaabbc");
 
         while(matcher.find()) {
             System.out.println("matcher.group(0) = " + matcher.group(0));
-            System.out.println("matcher.group(0) = " + matcher.group(1));
-            System.out.println("matcher.group(0) = " + matcher.group(2));
-            System.out.println("matcher.group(0) = " + matcher.group(3));
+            System.out.println("matcher.group(1) = " + matcher.group(1));
+        }
+    }
+
+    @Test
+    public void testRegexxxx() {
+        String regex = "(.)\\1+";
+        Pattern pattern = compile(regex);
+        Matcher matcher = pattern.matcher("aaabbc");
+
+        while(matcher.find()) {
+            System.out.println("matcher.group(0) = " + matcher.group(0));
+            System.out.println("matcher.group(1) = " + matcher.group(1));
         }
     }
 
