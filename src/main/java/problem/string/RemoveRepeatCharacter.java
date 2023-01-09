@@ -13,8 +13,8 @@ public class RemoveRepeatCharacter {
         List<String> list = new ArrayList<>();
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(s);
-        StringBuilder builder = new StringBuilder();
 
+        StringBuilder builder = new StringBuilder();
         while (m.find()) {
             String sub = m.group();
             if(sub.length() <= 1) {
