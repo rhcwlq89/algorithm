@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 import static java.util.regex.Pattern.compile;
 import static org.junit.jupiter.api.Assertions.assertFalse;
