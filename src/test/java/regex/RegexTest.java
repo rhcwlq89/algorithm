@@ -10,7 +10,7 @@ import static java.util.regex.Pattern.compile;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class regexTest {
+public class RegexTest {
 
     @Test
     public void testRegexGreedyQuantifiers() {
