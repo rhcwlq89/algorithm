@@ -32,7 +32,7 @@ public class StreamTest {
         list.add("ddd");
         long i  = 1l;
         i++;
-        list.stream().map(String::toUpperCase).forEach(System.out::print).;
+        list.stream().map(String::toUpperCase).forEach(System.out::print);
     }
 
     @Test
